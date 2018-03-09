@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dojot 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-06 10:54-0200\n"
+"POT-Creation-Date: 2018-03-08 15:13-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: ../../source/faq/faq.rst:4
 msgid "Frequently Asked Questions"
@@ -526,14 +526,35 @@ msgstr ""
 "lembrar os usuários de salvarem as suas configurações."
 
 #: ../../source/faq/faq.rst:237
+msgid "How can I retrieve historical data for a particular device?"
+msgstr "Como obter o histórico de um dispositivo em particular?"
+
+#: ../../source/faq/faq.rst:239
+msgid "You can do this by sending a request to /history endpoint, such as:"
+msgstr "Você pode fazer isso através de uma solicitação para '/history', como:"
+
+#: ../../source/faq/faq.rst:250
+msgid ""
+"which will retrieve the last 10 entries of `temperature` attribute from "
+"the device `3ba9`. There are more operators that could be used to filter "
+"entries. Check `STH <https://github.com/telefonicaid/fiware-sth-"
+"comet/blob/master/doc/manuals/raw-data-retrieval.md>`_ documentation to "
+"check out all possible operators."
+msgstr ""
+"que responderá com os últimos 10 valores do atributo `temperatura` do "
+"dispositivo `3ba9`. Existem outros operadores que podem ser usados para filtrar "
+"os valores retornados. O documento `STH <https://github.com/telefonicaid/fiware-sth-"
+"comet/blob/master/doc/manuals/raw-data-retrieval.md>`_ descreve todos os operadores disponíveis."
+
+#: ../../source/faq/faq.rst:256
 msgid "Data Flows"
 msgstr "Fluxos de Dados"
 
-#: ../../source/faq/faq.rst:241
+#: ../../source/faq/faq.rst:260
 msgid "What is data flow?"
 msgstr "O que é um fluxo?"
 
-#: ../../source/faq/faq.rst:243
+#: ../../source/faq/faq.rst:262
 msgid ""
 "It’s a processing flow for income messages/data of a device. With a flow "
 "you can dynamically analyse each new message in order to apply "
@@ -542,7 +563,7 @@ msgstr ""
 "É um processamento de mensagens de um dispositivo. Com um fluxo, você "
 "pode analisar dinamicamente cada nova mensagem"
 
-#: ../../source/faq/faq.rst:248
+#: ../../source/faq/faq.rst:267
 msgid ""
 "The data flow UI… really looks like node-RED. Are they related in some "
 "way?"
@@ -550,7 +571,7 @@ msgstr ""
 "A interface dos fluxos... ela se parece com o node-RED. Eles tem alguma "
 "relação?"
 
-#: ../../source/faq/faq.rst:250
+#: ../../source/faq/faq.rst:269
 msgid ""
 "It’s based on the Node-RED frontend, but uses its own engine to process "
 "the messages. If you’re familiar with Node-Red, you won’t have any "
@@ -559,11 +580,11 @@ msgstr ""
 "A interface dos fluxos é baseada no node-RED, mas a aplicação das regras "
 "e execução das ações é feita por um mecanismo próprio da dojot. "
 
-#: ../../source/faq/faq.rst:254
+#: ../../source/faq/faq.rst:273
 msgid "Why should I use it?"
 msgstr "Por que eu deveria usar um fluxo?"
 
-#: ../../source/faq/faq.rst:256
+#: ../../source/faq/faq.rst:275
 msgid ""
 "It allows one of the coolest things of IoT in an easy and intuitive way, "
 "which is to analyse data for extracting information, then take actions."
@@ -572,15 +593,15 @@ msgstr ""
 " e intuitiva que é analisar dados para extração de informações e execução"
 " de ações."
 
-#: ../../source/faq/faq.rst:260
+#: ../../source/faq/faq.rst:279
 msgid "What can it do, exactly?"
 msgstr "O que ele pode fazer, exatamente?"
 
-#: ../../source/faq/faq.rst:262
+#: ../../source/faq/faq.rst:281
 msgid "You can do things such as:"
 msgstr "Você pode fazer coisas como:"
 
-#: ../../source/faq/faq.rst:264
+#: ../../source/faq/faq.rst:283
 msgid ""
 "Create virtual viewers of a device (rename attributes, aggregate "
 "attributes, change values, etc)."
@@ -588,27 +609,27 @@ msgstr ""
 "Criar visões para um dispositivo (renomear atributos, agregá-los, "
 "alterá-los, etc.)"
 
-#: ../../source/faq/faq.rst:267
+#: ../../source/faq/faq.rst:286
 msgid "Infer information based on switch rules."
 msgstr "Inferir informações baseadas em regras simples."
 
-#: ../../source/faq/faq.rst:269
+#: ../../source/faq/faq.rst:288
 msgid "Infer information based on edge-detection rules."
 msgstr "Inferir informações baseadas em regras de detecção de borda."
 
-#: ../../source/faq/faq.rst:271
+#: ../../source/faq/faq.rst:290
 msgid "Infer information based on geo-fence rules."
 msgstr "Inferir informações através da posição dos dispositivos."
 
-#: ../../source/faq/faq.rst:273
+#: ../../source/faq/faq.rst:292
 msgid "Notify through email."
 msgstr "Enviar notificações via email."
 
-#: ../../source/faq/faq.rst:275
+#: ../../source/faq/faq.rst:294
 msgid "Notify through HTTP."
 msgstr "Enviar notificações via HTTP."
 
-#: ../../source/faq/faq.rst:277
+#: ../../source/faq/faq.rst:296
 msgid ""
 "The data flows component is in constantly development with new features "
 "being added every new release."
@@ -616,11 +637,11 @@ msgstr ""
 "O componente responsável pelo fluxo de dados está em desenvolvimento "
 "constante e novas funcionalidades são adicionadas a cada versão."
 
-#: ../../source/faq/faq.rst:281
+#: ../../source/faq/faq.rst:300
 msgid "So, how can I use it?"
 msgstr "Pois bem, como eu posso usá-lo?"
 
-#: ../../source/faq/faq.rst:283
+#: ../../source/faq/faq.rst:302
 msgid ""
 "It follows the basic usage flow as node-RED. You can check its "
 "`documentation <https://nodered.org>`_ for more details about this."
@@ -628,11 +649,11 @@ msgstr ""
 "Ele segue o modo de uso do node-RED. Você pode ler a `documentação "
 "<https://nodered.org>`_ para mais detalhes."
 
-#: ../../source/faq/faq.rst:287
+#: ../../source/faq/faq.rst:306
 msgid "Can I apply the same flow to multiple devices?"
 msgstr "Posso aplicar o mesmo fluxo para múltiplos dispositivos?"
 
-#: ../../source/faq/faq.rst:289
+#: ../../source/faq/faq.rst:308
 msgid ""
 "Multiple devices can be used both as input and output of data flows. It’s"
 " worth to point out that the flow is processed individually for each new "
@@ -642,11 +663,11 @@ msgstr ""
 "em fluxo de dados. É importante notar que cada fluxo é aplicado a cada "
 "nova mensagem, ou seja, para cada dispositivo de entrada."
 
-#: ../../source/faq/faq.rst:294
+#: ../../source/faq/faq.rst:313
 msgid "Can I correlate data from different devices in the same flow?"
 msgstr "Posso correlacionar dados de diferentes dispositivos no mexmo fluxo?"
 
-#: ../../source/faq/faq.rst:296
+#: ../../source/faq/faq.rst:315
 msgid ""
 "As the data flow is processed individually for each message, you need to "
 "create a virtual device to aggregate all attributes, then use this "
@@ -656,11 +677,11 @@ msgstr ""
 "você deve criar um dispositivo virtual para agregar todos os atributos e "
 "então usar este dispositivo como entrada de um novo fluxo."
 
-#: ../../source/faq/faq.rst:300
+#: ../../source/faq/faq.rst:319
 msgid "I want to send an email, what should I do?"
 msgstr "Eu quero enviar uma notificação por e-mail, como devo fazer?"
 
-#: ../../source/faq/faq.rst:302
+#: ../../source/faq/faq.rst:321
 msgid ""
 "Basically, you need to add an email node and configure it. This node is "
 "pre-configured to use the Gmail server ``gmail-smtp-in.l.google.com``, "
@@ -673,7 +694,7 @@ msgstr ""
 " um nó 'template' e associar a variável criada nestenó com o nó de e-mail"
 " através do campo 'source' deste último."
 
-#: ../../source/faq/faq.rst:310
+#: ../../source/faq/faq.rst:329
 msgid ""
 "It is important to point out that dojot contains no e-mail server. It "
 "will generate SMTP commands and send them to the specified e-mail server."
@@ -681,23 +702,25 @@ msgstr ""
 "É importante notar que a dojot não contém um servidor de e-mail. A "
 "plataforma gera os comandos SMTP e os envia ao servidor especificado."
 
-#: ../../source/faq/faq.rst:315
+#: ../../source/faq/faq.rst:334
 msgid "What about a HTTP POST request, how can I send it?"
 msgstr "E se eu quiser enviar um HTTP POST?"
 
-#: ../../source/faq/faq.rst:317
+#: ../../source/faq/faq.rst:336
 msgid "It is almost the same process as sending an e-mail."
 msgstr "É quase a mesma coisa de enviar um e-mail."
 
-#: ../../source/faq/faq.rst:323
+#: ../../source/faq/faq.rst:342
 msgid "One important note: make sure that dojot can access your server."
-msgstr "Um aviso importante: assegure-se de que a dojot consegue acessar seu servidor."
+msgstr ""
+"Um aviso importante: assegure-se de que a dojot consegue acessar seu "
+"servidor."
 
-#: ../../source/faq/faq.rst:326
+#: ../../source/faq/faq.rst:345
 msgid "I want to rename the attributes of a device, what should I do?"
 msgstr "Eu quero renomear os atributos de um dispositivo. O que eu devo fazer?"
 
-#: ../../source/faq/faq.rst:328
+#: ../../source/faq/faq.rst:347
 msgid ""
 "First of all, you need to create a virtual device with the new "
 "attributes, then you build a data flow to rename them. This can be done "
@@ -714,11 +737,11 @@ msgstr ""
 "'change' ao dispositivo virtual, associando-o à variável criada no nó "
 "change através do campo 'source'"
 
-#: ../../source/faq/faq.rst:338
+#: ../../source/faq/faq.rst:357
 msgid "I want to aggregate the attributes of multiple devices, what should I do?"
 msgstr "Quero agregar os atributos de múltiplos dispositivos. O que eu devo fazer?"
 
-#: ../../source/faq/faq.rst:340
+#: ../../source/faq/faq.rst:359
 msgid ""
 "First of all, you need to create a virtual device to aggregate all "
 "attributes, then you build a data flow to map the attributes of each "
@@ -735,11 +758,11 @@ msgstr ""
 "todos os atributos de saída. Todos os nós change devem ser, por fim, "
 "conectados ao nó de saída representando o dispositivo virtual."
 
-#: ../../source/faq/faq.rst:350
+#: ../../source/faq/faq.rst:369
 msgid "It would be cool a WhatsApp node, is it in roadmap?"
 msgstr "Seria legal ter um nó 'Whatsapp'. Está no roadmap?"
 
-#: ../../source/faq/faq.rst:352
+#: ../../source/faq/faq.rst:371
 msgid ""
 "It’s under analysis. We intend to support other notifications systems "
 "besides email, including WhatsApp, Twitter and Telegram. If you also have"
@@ -749,51 +772,23 @@ msgstr ""
 "notificação além de e-mail, incluindo Whatsapp, Twitter e Telegram. Se "
 "você tem interesse, sua ajuda é muito bem-vinda!"
 
-#: ../../source/faq/faq.rst:356
+#: ../../source/faq/faq.rst:375
 msgid "Applications"
 msgstr "Aplicações"
 
-#: ../../source/faq/faq.rst:360
+#: ../../source/faq/faq.rst:379
 msgid "What APIs are available for applications?"
 msgstr "Quais APIs estão disponíveis para aplicações?"
 
-#: ../../source/faq/faq.rst:362
-msgid ""
-"`Authorization and user management "
-"<https://github.com/dojot/auth/blob/master/docs/auth.apib>`_"
+#: ../../source/faq/faq.rst:381
+msgid "You can check all available APIs in the `API Listing page <../apis.html>`_"
 msgstr ""
-"`Autorização e gerenciamento de usuário "
-"<https://github.com/dojot/auth/blob/master/docs/auth.apib>`_"
 
-#: ../../source/faq/faq.rst:364
-msgid ""
-"`Device management <https://github.com/dojot/device-"
-"manager/tree/master/doc>`_"
-msgstr ""
-"`Gerenciamento de dispositivos <https://github.com/dojot/device-"
-"manager/tree/master/doc>`_"
-
-#: ../../source/faq/faq.rst:366
-msgid "`Subscriptions <https://github.com/dojot/fiware-orion/tree/master/doc>`_"
-msgstr "`Subscrições <https://github.com/dojot/fiware-orion/tree/master/doc>`_"
-
-#: ../../source/faq/faq.rst:368
-msgid ""
-"`Flow management "
-"<https://github.com/dojot/mashup/blob/cpqd_master/docs/api.apib>`_"
-msgstr ""
-"`Gerenciamento de fluxos "
-"<https://github.com/dojot/mashup/blob/cpqd_master/docs/api.apib>`_"
-
-#: ../../source/faq/faq.rst:370
-msgid "`History <https://github.com/dojot/history-ws>`_"
-msgstr "`Histórico <https://github.com/dojot/history-ws>`_"
-
-#: ../../source/faq/faq.rst:373
+#: ../../source/faq/faq.rst:384
 msgid "How can I use them?"
 msgstr "Como posso usá-los?"
 
-#: ../../source/faq/faq.rst:375
+#: ../../source/faq/faq.rst:386
 msgid ""
 "First, you will need an access token, which can be retrieved sending a "
 "HTTP POST request to ``/auth`` endpoint with the following JSON content:"
@@ -801,7 +796,7 @@ msgstr ""
 "Você precisará de um token de acesso, o qual pode ser obtido enviando uma"
 " requisição POST para ``/auth`` com o seguinte conteúdo JSON"
 
-#: ../../source/faq/faq.rst:382
+#: ../../source/faq/faq.rst:393
 msgid ""
 "Obviously the values of each attribute should be correctly filled in. An "
 "example of such request using ``curl`` would be:"
@@ -810,11 +805,11 @@ msgstr ""
 "preenchdios. Um exemplo de requisição usando o curl empregando o token "
 "obtido é: "
 
-#: ../../source/faq/faq.rst:390
+#: ../../source/faq/faq.rst:401
 msgid "which gives us back:"
 msgstr "o que nos devolve:"
 
-#: ../../source/faq/faq.rst:396
+#: ../../source/faq/faq.rst:407
 msgid ""
 "This token (which is a lengthy alpha-numeric string) should be used in "
 "every request that is sent to dojot (excluding, of course this request). "
@@ -825,11 +820,11 @@ msgstr ""
 "requisições de obtenção de tokens, obviamente). Cada chamada para esta "
 "API irá gerar um token diferente."
 
-#: ../../source/faq/faq.rst:400
+#: ../../source/faq/faq.rst:411
 msgid "This token should be placed in a ``Authorization`` HTTP header, such as:"
 msgstr "Este token deve ser colocado em um cabeçalho ``Authorization``, tal como:"
 
-#: ../../source/faq/faq.rst:406
+#: ../../source/faq/faq.rst:417
 msgid ""
 "A few endpoints requires two more headers, the ``Fiware-Service`` and "
 "``Fiware-ServicePath``. They are: ``/metrics/``, ``/iot/`` and "
@@ -839,7 +834,7 @@ msgstr ""
 "Service`` e ``Fiware-ServicePath``. São eles: ``/metrics/``, ``/iot/`` e "
 "``/history/``"
 
-#: ../../source/faq/faq.rst:409
+#: ../../source/faq/faq.rst:420
 msgid ""
 "``Fiware-Service`` header should contain the service name associated to "
 "the user. In general, it should be the username. ``Fiware-ServicePath`` "
@@ -849,13 +844,13 @@ msgstr ""
 " usuário. Já o ``Fiware-ServicePath`` é sempre uma barra (``/``). Um "
 "exemplo:"
 
-#: ../../source/faq/faq.rst:418
+#: ../../source/faq/faq.rst:429
 msgid "I'm interested in integrate my application with dojot. How can I do it?"
 msgstr ""
 "Estou interessado(a) em integrar minha aplicação com dojot. O que devo "
 "fazer?"
 
-#: ../../source/faq/faq.rst:420
+#: ../../source/faq/faq.rst:431
 msgid ""
 "This should be pretty straightforward. There are two ways that your "
 "application could be integrated with dojot:"
@@ -863,7 +858,7 @@ msgstr ""
 "Isto deve ser bastante direto. Há duas formas de integrar sua aplicação à"
 " dojot:"
 
-#: ../../source/faq/faq.rst:423
+#: ../../source/faq/faq.rst:434
 msgid ""
 "**Retrieving historical data**: you might want to periodically read all "
 "historical data related to a device. This can be done by using this API "
@@ -875,7 +870,7 @@ msgstr ""
 " feito usando esta API (um lembrete apenas: todos os serviços descritos "
 "neste apiary deve ser precedido de ``/history/``)."
 
-#: ../../source/faq/faq.rst:427
+#: ../../source/faq/faq.rst:438
 msgid ""
 "**Subscribing to events related to devices**: if your application is able"
 " to listen to events, you might rather use subscriptions, which can be "
@@ -887,7 +882,7 @@ msgstr ""
 "subscrições, as quais podem ser criadas usando esta API (todos os "
 "serviços deste apiary devem ser precedidos por ``/metrics/``)."
 
-#: ../../source/faq/faq.rst:431
+#: ../../source/faq/faq.rst:442
 msgid ""
 "**Using mashup to pre-process data**: if you want to do something more, "
 "you could use flows. They can help process and transform data so that "
@@ -902,7 +897,7 @@ msgstr ""
 " dados em dispositivos virtuais e criar subscrições para enviar "
 "notificações toda vez que acontecer uma alteração em seus atributos."
 
-#: ../../source/faq/faq.rst:436
+#: ../../source/faq/faq.rst:447
 msgid ""
 "All these endpoints should bear an access token, which is retrieved as "
 "described in the question `How can I use them?`_."
@@ -913,3 +908,31 @@ msgstr ""
 #~ msgid "REST APIs are explained in the `Application`_ section."
 #~ msgstr ""
 
+#~ msgid ""
+#~ "`Authorization and user management "
+#~ "<https://github.com/dojot/auth/blob/master/docs/auth.apib>`_"
+#~ msgstr ""
+#~ "`Autorização e gerenciamento de usuário "
+#~ "<https://github.com/dojot/auth/blob/master/docs/auth.apib>`_"
+
+#~ msgid ""
+#~ "`Device management <https://github.com/dojot/device-"
+#~ "manager/tree/master/doc>`_"
+#~ msgstr ""
+#~ "`Gerenciamento de dispositivos "
+#~ "<https://github.com/dojot/device-manager/tree/master/doc>`_"
+
+#~ msgid ""
+#~ "`Subscriptions <https://github.com/dojot/fiware-"
+#~ "orion/tree/master/doc>`_"
+#~ msgstr "`Subscrições <https://github.com/dojot/fiware-orion/tree/master/doc>`_"
+
+#~ msgid ""
+#~ "`Flow management "
+#~ "<https://github.com/dojot/mashup/blob/cpqd_master/docs/api.apib>`_"
+#~ msgstr ""
+#~ "`Gerenciamento de fluxos "
+#~ "<https://github.com/dojot/mashup/blob/cpqd_master/docs/api.apib>`_"
+
+#~ msgid "`History <https://github.com/dojot/history-ws>`_"
+#~ msgstr "`Histórico <https://github.com/dojot/history-ws>`_"

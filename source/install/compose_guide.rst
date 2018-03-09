@@ -59,13 +59,31 @@ https://github.com/dojot/docker-compose
 
 or as git clone command:::
 
-  git clone git@github.com:dojot/docker-compose.git
+  git clone https://github.com/dojot/docker-compose.git
 
 Once the repository is properly cloned, select the version to be used by
 checking out the appropriate tag (do notice that the tagname has to be replaced): ::
 
   # Must be run from within the deployment repo
   git checkout [tag name]
+
+.. note::
+  As an alternative, stable versions can be downloaded (as tar.gz or zip packages) directly from
+  github.
+
+  The list of available packages can be found at:
+
+  https://github.com/dojot/docker-compose/releases
+
+.. warning::
+
+  While checking out the `latest` version of services should work, we strongly recommend
+  new users to download a "stable" version.
+
+  The list of stable versions of dojot can be found at:
+
+  https://github.com/dojot/docker-compose/releases
+
 
 That done, the environment can be brought up by: ::
 
